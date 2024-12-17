@@ -22,8 +22,8 @@
             <label for="largura">Largura da Cobertura (m):</label>
             <input type="number" id="largura" placeholder="Ex: 4" required>
 
-            <label for="comprimento">Comprimento da Cobertura (m):</label>
-            <input type="number" id="comprimento" placeholder="Ex: 4" required>
+            <label for="avanco">Avanço da Cobertura (m):</label>
+            <input type="number" id="avanco" placeholder="Ex: 4" required>
 
             <label for="espaco">Espaçamento entre barras (m):</label>
             <input type="number" id="espaco" value="0.60" required>
@@ -34,7 +34,11 @@
                 <option value="centimetros">Centímetros</option>
             </select>
 
-            <button onclick="calcular()">Calcular</button>
+            <!-- Botões -->
+            <div class="button-container">
+                <button onclick="calcular()" class="btn-calcular">Calcular</button>
+                <button onclick="limpar()" class="btn-limpar">Limpar</button>
+            </div>
         </div>
 
         <div class="result-container">
