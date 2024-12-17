@@ -63,15 +63,25 @@ input, select, button {
 }
 
 button {
-    background-color: #3498db;
+    background-color: #28a745; /* Verde */
     color: #fff;
     border: none;
     cursor: pointer;
     font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #218838; /* Verde escuro */
+}
+
+/* Botões "Limpar" */
+.btn-limpar {
+    background-color: #dc3545; /* Vermelho */
+}
+
+.btn-limpar:hover {
+    background-color: #c82333; /* Vermelho escuro */
 }
 
 /* Resultados */
@@ -87,13 +97,6 @@ button:hover {
     color: #2c3e50;
 }
 
-footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.9rem;
-    color: #7f8c8d;
-}
-
 /* Responsividade */
 @media (max-width: 768px) {
     .container {
@@ -104,8 +107,17 @@ footer {
     h1 {
         font-size: 1.5rem;
     }
-    
+
     button {
         font-size: 1rem;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-calcular, .btn-limpar {
+        width: 100%;
     }
 }
