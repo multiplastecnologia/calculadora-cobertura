@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Cobertura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Cobertura</h1>
+        
+        <!-- Logo da PergoFlex -->
+        <img src="logo.png" alt="Logo PergoFlex" class="logo">
+
+        <label for="largura">Largura (m):</label>
+        <input type="number" id="largura" placeholder="Exemplo: 4">
+
+        <label for="comprimento">Comprimento (m):</label>
+        <input type="number" id="comprimento" placeholder="Exemplo: 4">
+        
+        <label for="precoBarraAluminio">Preço da Barra de Alumínio (R$):</label>
+        <input type="number" id="precoBarraAluminio" placeholder="Exemplo: 30">
+
+        <label for="precoPlaca">Preço da Placa de Policarbonato (R$):</label>
+        <input type="number" id="precoPlaca" placeholder="Exemplo: 100">
+
+        <label for="precoBarraTrapezio">Preço da Barra de Trápezio (R$):</label>
+        <input type="number" id="precoBarraTrapezio" placeholder="Exemplo: 50">
+
+        <button onclick="calcular()">Calcular</button>
+        <button onclick="resetar()">Resetar</button>
+
+        <div id="resultados">
+            <h3>Resultados:</h3>
+            <p id="barras">Número de barras de alumínio: </p>
+            <p id="placas">Número de placas de policarbonato: </p>
+            <p id="barrasTrapezio">Número de barras de trápezio: </p>
+            <p id="custoTotal">Custo total: </p>
+        </div>
+
+        <!-- Informações de autoria -->
+        <footer>
+            <p>Desenvolvido pela <strong>PergoFlex</strong></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
