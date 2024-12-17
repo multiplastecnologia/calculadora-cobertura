@@ -34,11 +34,17 @@
                 <option value="centimetros">Centímetros</option>
             </select>
 
-            <!-- Botões -->
-            <div class="button-container">
-                <button onclick="calcular()" class="btn-calcular">Calcular</button>
-                <button onclick="limpar()" class="btn-limpar">Limpar</button>
-            </div>
+            <label for="valorAluminio">Valor por barra de Alumínio (R$):</label>
+            <input type="number" id="valorAluminio" placeholder="Valor por barra de alumínio" required>
+
+            <label for="valorTrapezio">Valor por barra de Trapézio (R$):</label>
+            <input type="number" id="valorTrapezio" placeholder="Valor por barra de trapézio" required>
+
+            <label for="valorPolicarbonato">Valor por placa de Policarbonato 6x2m (R$):</label>
+            <input type="number" id="valorPolicarbonato" placeholder="Valor por placa de policarbonato" required>
+
+            <button onclick="calcular()">Calcular</button>
+            <button onclick="limpar()" class="btn-limpar">Limpar</button>
         </div>
 
         <div class="result-container">
@@ -46,6 +52,10 @@
             <p id="resultado"></p>
             <p id="resultado2"></p>
             <p id="resultado3"></p>
+            <p id="valorTotalAluminio"></p>
+            <p id="valorTotalTrapezio"></p>
+            <p id="valorTotalPolicarbonato"></p>
+            <p id="valorTotalGasto"></p>
         </div>
 
         <footer>
